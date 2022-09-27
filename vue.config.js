@@ -5,15 +5,14 @@ module.exports = defineConfig({
   ],
   pluginOptions: {
     electronBuilder: {
+      customFileProtocol: "./", // fix css @font-face url
       builderOptions: {
-        appId: "com.electron.bs-counter",
-        productName: "BS Counter",
-        "publish": {
-          "provider": "github",
-        },
+        appId: 'com.electron.bs-counter',
+        productName: 'BS Counter',
+        publish: ['github'],
         win: {
-          target: ["nsis", "portable", "zip"],
-          icon: "public/favicon.ico"
+          target: ['nsis', 'zip'],
+          icon: 'public/favicon.ico'
         }
       }
     }

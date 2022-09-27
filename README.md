@@ -2,6 +2,11 @@
 
 It's dangerous to **count** alone! Take this.
 
+![](/public/Screenshots/defaultView.jpg?raw=true "Default view")
+![](/public/Screenshots/configuration.jpg?raw=true "Configuration")
+![](/public/Screenshots/colorConfiguration.jpg?raw=true "Color configuration")
+![](/public/Screenshots/customView.jpg?raw=true "Custom view")
+
 ## Features
 
 - Count to any (natural) number you want
@@ -13,7 +18,6 @@ It's dangerous to **count** alone! Take this.
 - More icons and fonts
 - Keyboard shortcuts
 - Save counter to file
-- Allow negative numbers
 
 # Development
 

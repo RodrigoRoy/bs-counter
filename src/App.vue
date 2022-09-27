@@ -297,18 +297,18 @@ export default {
 /* Definition for the Arcadepix font */
 @font-face {
   font-family: arcadepix;
-  src: local('Arcadepix.ttf'), local('./assets/Arcadepix.ttf'), url('./assets/Arcadepix.ttf'); /* Check after build compatibility */
+  src: url('./assets/Arcadepix.ttf');
 }
 
 /* Definition for the Jumpman font */
 @font-face {
   font-family: jumpman;
-  src: local('Jumpman.ttf'), local('./assets/Jumpman.ttf'), url('./assets/Jumpman.ttf'); /* Check after build compatibility */
+  src: url('./assets/Jumpman.ttf');
 }
 
 /* Definition for the SM Maker font */
 @font-face {
   font-family: smm;
-  src: local('SMM.ttf'), local('./assets/SMM.ttf'), url('./assets/SMM.ttf'); /* Check after build compatibility */
+  src: url('./assets/SMM.ttf');
 }
 </style>
