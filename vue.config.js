@@ -8,9 +8,12 @@ module.exports = defineConfig({
       builderOptions: {
         appId: "com.electron.bs-counter",
         productName: "BS Counter",
+        "publish": {
+          "provider": "github",
+        },
         win: {
-          target: "portable",
-          // icon: "public/favicon.ico"
+          target: ["nsis", "portable", "zip"],
+          icon: "public/favicon.ico"
         }
       }
     }

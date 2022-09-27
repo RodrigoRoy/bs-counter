@@ -232,8 +232,8 @@ export default {
       localStorage.setItem('hideButton', newValue)
     },
     count(newValue){
-      if(!newValue) // this prevent null or empty string errors
-        this.count = 0
+      this.count = +newValue // prevent null or empty string (convert text to int)
+      this.count = this.count < 0 ? 0 : this.count // check for negative numbers
       localStorage.setItem('count', newValue)
     }
   },
@@ -297,18 +297,18 @@ export default {
 /* Definition for the Arcadepix font */
 @font-face {
   font-family: arcadepix;
-  src: url('~@/assets/Arcadepix.ttf');
+  src: local('Arcadepix.ttf'), local('./assets/Arcadepix.ttf'), url('./assets/Arcadepix.ttf'); /* Check after build compatibility */
 }
 
 /* Definition for the Jumpman font */
 @font-face {
   font-family: jumpman;
-  src: url('~@/assets/Jumpman.ttf');
+  src: local('Jumpman.ttf'), local('./assets/Jumpman.ttf'), url('./assets/Jumpman.ttf'); /* Check after build compatibility */
 }
 
 /* Definition for the SM Maker font */
 @font-face {
   font-family: smm;
-  src: url('~@/assets/SMM.ttf');
+  src: local('SMM.ttf'), local('./assets/SMM.ttf'), url('./assets/SMM.ttf'); /* Check after build compatibility */
 }
 </style>

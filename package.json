@@ -1,8 +1,12 @@
 {
   "name": "bs-counter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Configurable and simple counter. Intended use for video game to count lives, deaths, points, coins, etc.",
-  "keywords": ["counter", "video game", "number"],
+  "keywords": [
+    "counter",
+    "video game",
+    "number"
+  ],
   "homepage": "https://github.com/RodrigoRoy/bs-counter",
   "bugs": {
     "url": "https://github.com/RodrigoRoy/bs-counter/issues",
@@ -27,6 +31,7 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.8.3",
+    "dotenv": "^16.0.2",
     "electron-window-state": "^5.0.3",
     "vue": "^2.6.14",
     "vuetify": "^2.6.0"

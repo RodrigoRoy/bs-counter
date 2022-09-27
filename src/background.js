@@ -1,5 +1,9 @@
 'use strict'
 
+// Import process environment variables
+import * as dotenv from 'dotenv'
+dotenv.config()
+
 import { app, protocol, BrowserWindow } from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
